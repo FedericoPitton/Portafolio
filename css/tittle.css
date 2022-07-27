@@ -5,7 +5,7 @@
     width: 100%;
     justify-content: space-between;
     padding-top: 2%;
-    padding-bottom: 2%
+    padding-bottom: 2%;
 }
 .title__container  {
     display: flex;
@@ -20,45 +20,69 @@
     border-radius: 50%;
     padding-right: 5%;
     padding-left: 2%;
-    box-shadow: 20%;
+    box-shadow:  rgba(0,0,0,0.2) 50%;
 }
 .title__bio  {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.4rem;
     padding-bottom: .3rem;
     font-family: var(--open-sans);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,.3);
+    
 }
 .title__subsection  {
     padding-left: 3%;
     padding-right: 3%;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: .5rem;
     text-align: justify;
+    margin: 5%;
+    margin-bottom: 5%;
 }
 
 .title__network  {
     display: flex;
+    margin-top: 2%;
     flex-wrap: wrap;
     gap: 2%;
-    justify-content: space-around;
-    line-height: 1.5;
+    justify-content: space-evenly;
+    
     
 }
-.title__network__item {
+.title__network__item{
     display: flex;
-    margin-bottom: 2%;
-    width: 45%;
-    border: 1px solid var(--color-letra-blanco);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    width: 30%;
+    border: 2px solid var(--color-letra-blanco);
+    border-radius: 9%;
+    padding: 2%;
+    height: 5vh;
+
+    box-shadow: 0.5em 0.37em 0.87em 0.87em rgb(0 0 0 / 4%);
+    background-color: #17467f;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: solid 0.05em #083366;
+}
+
+.title__network__item a{
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border-radius: 10%;
+    
 }
-
 .title__network__item img  {
     filter: invert(100%) sepia(34%) saturate(2106%) hue-rotate(177deg) brightness(102%) contrast(101%);
+
 }
 .title__network__item:hover  {
     text-decoration: underline;
+    background: var(--background-image-menu);
+    transition: 0.3s;
+    border: 0.1em solid #083366;
 }

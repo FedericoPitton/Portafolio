@@ -1,0 +1,35 @@
+
+.skills__title {
+    text-align: center;
+    padding: 3%;
+    font-family: var(--open-sans);
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+}
+
+.skills__line  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+    height: 100%;
+}
+
+.skills__box  {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: black 1px solid;
+    padding: 2%;
+    margin-bottom: 4%;
+    border-radius: 3%;
+}
+
+.skills__name  {
+    font-weight: bold;
+}
+.skills__box img {
+    width: 20%;
+}

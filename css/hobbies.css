@@ -1,0 +1,37 @@
+.hobbies  {
+    padding-bottom: 5%;
+}
+.hobbies__title  {
+    text-align: center;
+    padding: 3%;
+    font-family: var(--open-sans);
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+    height: 100%;
+}
+
+.hobbies__box  {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: black 1px solid;
+    padding: 2%;
+    margin-bottom: 4%;
+    border-radius: 3%;
+}
+
+.hobbies__name  {
+    font-weight: bold;
+}
+.hobbies__box img {
+    width: 20%;
+}

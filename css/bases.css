@@ -1,7 +1,10 @@
 :root  {
     --background-image-menu: linear-gradient(180deg, #052043 0%, #3569a8 100%);
-    --background-image-about: linear-gradient(180deg, #3569a8 0%, #093366 100% );
+    --background-image-about: linear-gradient(180deg, #3569a8 0%, #527aab 30%, #f0faff 100% );
+    --background-image-skills: linear-gradient(180deg,  #2e6ab3 0%, #c3e3fd 100%);
+    --color-letra-gradient: linear-gradient(180deg, white 20%, black 50%);
     --background-general: #EAF2FD;
+    --background-blanco: #fffdfd;
 
     --background-color-menu: #072347;
     --background-color-about: #3569a8;
@@ -34,9 +37,20 @@
     color: var(--color-letra-blanco);
     border: none;
     margin-bottom: 0;
+    height: 100vh;
 }
 a , a:visited, a:hover, a:active {
     text-decoration: none;
     color: var(--color-letra-blanco);
   
+}
+
+.fondo-montaña {
+    background: var(--background-image-skills);
+    background-image: url(../assets/montaña.jpg);
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 123vw;
 }

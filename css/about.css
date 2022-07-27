@@ -2,19 +2,29 @@
     
     background-image: var(--background-image-about);
     border: none;
-    margin-top: 0;
     padding-left: 3%;
     padding-right: 3%;
     text-align: justify;
+    padding-bottom: 2%;
+    padding-top: 2%;
     
+   
 }
 
+.about__container  {
+    background-image:var(--color-letra-gradient) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
 .about__container  {
     color: var(--color-letra-blanco);
 
 }
 .about__container p {
     padding-bottom: 1%;
+    font-weight: 400;
 }
 .about__title {
     padding-top: 1%;
