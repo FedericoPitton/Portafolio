@@ -1,10 +1,14 @@
 :root  {
     --background-image-menu: linear-gradient(180deg, #052043 0%, #3569a8 100%);
+    --background-image-form: linear-gradient(180deg,  #3569a8 0%,#052043 100%);
+    --background-image-academic: radial-gradient( circle at 50%, #052043 0%, #3569a8 100%);
     --background-image-about: linear-gradient(180deg, #3569a8 0%, #527aab 30%, #f0faff 100% );
-    --background-image-skills: linear-gradient(180deg,  #2e6ab3 0%, #c3e3fd 100%);
+    --background-footer:#052043;
     --color-letra-gradient: linear-gradient(180deg, white 20%, black 50%);
     --background-general: #EAF2FD;
     --background-blanco: #fffdfd;
+    --background-blanco-pastel:#F5F5F5;
+    --background-azul:#527aab;
 
     --background-color-menu: #072347;
     --background-color-about: #3569a8;
@@ -25,7 +29,6 @@
 
 .tudo {
     font-family: var(--open-sans);
-    background: #093366;
 }
 .container {
     padding-right: 6%;
