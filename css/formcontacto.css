@@ -1,3 +1,75 @@
 .formcontacto {
     background: var(--background-image-form);
+    display: flex;
+    justify-content: center;
+    padding: 3% 0%;
+    color: var(--color-letra-blanco);
+}
+
+.formcontacto__contacto {
+    
+    width: 80%;
+
+
+}
+.formcontacto--esquerda {
+    display: none;
+}
+.formcontacto__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formcontacto__title {
+    font-family: var(--open-sans);
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+}
+
+.formcontacto__subtext {
+    line-height: 1.3;
+}
+
+.formcontacto__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+
+.formcontacto__input  {
+    height: 10%;
+}
+
+.formcontacto__textarea, .formcontacto__input  {
+    border-radius: 3%;
+    border: none;
+    font-size: 1.2rem;
+    background: var(--background-blanco);
+    outline: none;
+}
+.formcontacto__textarea::placeholder, .formcontacto__input::placeholder {
+    color:#A2A2A2;
+    /* position: absolute;
+    top: 1%;*/
+    padding-left: 2%; 
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+}
+.formcontacto__textarea::placeholder::content, .formcontacto__input::placeholder:active span{
+    color: red;
+}
+
+.formcontacto__boton {
+    width: 50%;
+    color: var(--background-blanco);
+    height: 7vh;
+    background: var(--background-image-menu);
+    border: 1px solid var(--background-azul);
+    font-weight: 500;
+    font-size: 1rem;
 }
