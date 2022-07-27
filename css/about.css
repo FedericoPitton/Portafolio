@@ -1,0 +1,23 @@
+.about  {
+    
+    background-image: var(--background-image-about);
+    border: none;
+    margin-top: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    
+}
+
+.about__container  {
+    color: var(--color-letra-blanco);
+
+}
+.about__container p {
+    padding-bottom: 1%;
+}
+.about__title {
+    padding-top: 1%;
+    padding-bottom: 0.4rem;
+    font-size: 1.8rem;
+}
