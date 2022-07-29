@@ -2,78 +2,75 @@
 .title__div  {
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: space-between;
-    padding-top: 2%;
     padding-bottom: 2%;
+    padding-top: 2%;
+    width: 100%;
 }
 .title__container  {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-bottom: 2%;
 }
 .title__profile {
-/*     width: 35vw; */
-    width: 40%;
-    height: 40%;
     border-radius: 50%;
-    padding-right: 5%;
+    height: 35vw;
     padding-left: 2%;
-    box-shadow:  rgba(0,0,0,0.2) 50%;
+    padding-right: 5%;
+    width: 35vw;
 }
 .title__bio  {
-    font-weight: 400;
-    font-size: 1.4rem;
-    padding-bottom: .3rem;
     font-family: var(--open-sans);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: .3rem;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,.3);
     
 }
 .title__subsection  {
-    padding-left: 3%;
-    padding-right: 3%;
-    font-weight: 300;
     font-size: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: .5rem;
-    text-align: justify;
+    font-weight: 300;
     margin: 5%;
     margin-bottom: 5%;
+    padding-bottom: .5rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5rem;
+    text-align: justify;
 }
 
 .title__network  {
     display: flex;
-    margin-top: 2%;
     flex-wrap: wrap;
     gap: 2%;
     justify-content: space-evenly;
+    margin-top: 2%;
     
     
 }
 .title__network__item{
-    display: flex;
     align-items: center;
+    background-color: #17467f;
+    border: 2px solid var(--color-letra-blanco);
+    border: solid 0.05em #083366;
+    border-radius: 9%;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.37em 0.87em 0.87em rgb(0 0 0 / 4%);
+    display: flex;
+    font-size: 1rem;
+    height: 5vh;
     justify-content: center;
     margin-bottom: 8%;
-    width: 30%;
-    border: 2px solid var(--color-letra-blanco);
-    border-radius: 9%;
     padding: 2%;
-    height: 5vh;
-
-    box-shadow: 0.5em 0.37em 0.87em 0.87em rgb(0 0 0 / 4%);
-    background-color: #17467f;
-    font-size: 1rem;
-    border-radius: 0.5em;
-    border: solid 0.05em #083366;
+    width: 30%;
 }
 
 .title__network__item a{
+    align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;
     
 }
 .title__network__item img  {
@@ -81,8 +78,70 @@
 
 }
 .title__network__item:hover  {
-    text-decoration: underline;
     background: var(--background-image-menu);
-    transition: 0.3s;
     border: 0.1em solid #083366;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+    .title__div, .title__container  {
+        padding: 0;
+    }
+    .title {
+        position: relative;
+    }
+    .title__div {
+        align-items: flex-start;
+        margin-left: 10%;
+        width: 50%;
+    }
+    .title__profile  {
+        bottom: 0;
+        height: 25vw;
+        margin: auto;
+        margin-right: 10%;
+        padding:0;
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 25vw;
+    }
+    .title__bio  {
+        font-size: 1.5rem;
+    }
+    .title__subsection  {
+        margin: 0;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        padding-top: 1rem;
+        text-align: start;
+    }
+    .title__network  {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .title__network__item  {
+        height: 3vh;
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .title__profile  {
+        bottom: 0;
+        height: 25vw;
+    }
+    .title__bio  {
+        font-size: 3.5rem;
+        margin-bottom: 1%;
+    }
+    .title__subsection  {
+        font-size: 2.5rem;
+        margin-bottom: 1%;
+    }
+    .title__network__item  {
+        font-size: 1.5rem;
+        height: 4vh;
+    }
 }

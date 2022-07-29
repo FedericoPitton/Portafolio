@@ -1,35 +1,72 @@
-
 .skills__title {
-    text-align: center;
-    padding: 3%;
     font-family: var(--open-sans);
-    font-weight: bold;
     font-size: 1.8rem;
+    font-weight: bold;
+    padding: 3%;
     padding-bottom: 5%;
+    text-align: center;
 }
 
-.skills__line  {
+.skills__line {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 2%;
     height: 100%;
+    justify-content: space-around;
 }
 
-.skills__box  {
-    width: 40%;
+.skills__box {
     align-items: center;
-    justify-content: center;
-    text-align: center;
     border: black 1px solid;
-    padding: 2%;
-    margin-bottom: 4%;
     border-radius: 3%;
+    justify-content: center;
+    margin-bottom: 4%;
+    padding: 2%;
+    text-align: center;
+    width: 40%;
 }
 
-.skills__name  {
+.skills__name {
     font-weight: bold;
 }
+
 .skills__box img {
     width: 20%;
+}
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+    }
+    .skills__title {
+        font-size: 1.5rem;
+    }
+    .skills__box {
+        border: 2px black solid;
+        gap: 0;
+        justify-content: space-evenly;
+        padding: 2% 0;
+        width: 30%;
+    }
+    .skills__line {
+        gap: 0;
+        width: 100%;
+    }
+    .skills__name {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .skills__title {
+        font-size: 2rem;
+    }
+    .skills__name {
+        font-size: 1.3rem;
+    }
+
 }
