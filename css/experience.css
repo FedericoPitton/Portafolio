@@ -3,68 +3,128 @@
 }
 
 .experience__section__title {
-    text-align: center;
-    padding: 3%;
     font-family: var(--open-sans);
-    font-weight: bold;
     font-size: 1.8rem;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;
 }
+
 .experiences {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .experience__box {
-    width: 80%;
     margin-bottom: 5%;
     padding: 2%;
+    width: 80%;
 }
+
 .experience__img {
     max-width: 100%;
 }
+
 .experience__title {
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
     font-weight: bold;
-}
-.experience__text  {
-    font-weight: 500;
-    margin-top: 1.5%;
     margin-bottom: 1.5%;
+    margin-top: 1.5%;
 }
+
+.experience__text {
+    font-weight: 500;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+}
+
 .experience__description {
-    width: 80%;
     display: flex;
+    width: 80%;
 }
+
 .experience__description span {
     display: flex;
     justify-content: space-between;
 }
+
 .experience__boton--repo {
-    width: 100%;
-    color: var(--background-azul);
-    height: 7vh;
-    border: 1px solid var(--background-azul);
     background: var(--background-blanco);
+    border: 1px solid var(--background-azul);
+    color: var(--background-azul);
     font-weight: 500;
-}
-.experience__boton--demo {
-    width: 100%;
-    color: var(--background-blanco);
     height: 7vh;
+    width: 100%;
+}
+
+.experience__boton--demo {
     background: var(--background-image-menu);
     border: 1px solid var(--background-azul);
+    color: var(--background-blanco);
     font-weight: 500;
+    height: 7vh;
+    width: 100%;
 }
+
 .experience__repo {
     width: 100%;
 }
+
 .experience__demo {
     width: 100%;
 }
+
 .experience__description button:hover {
     border: 2px solid;
     font-size: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+    .experience__box {
+        align-items: center;
+        display: flex;
+    }
+    .experience__img  {
+        width: 70%;
+    }
+    .experience__info-container {
+        margin-left: 3%;
+    }
+    .experience__title {
+        font-size: 1.3rem;
+        margin-bottom: 4%;
+    }
+    .experience__text {
+        font-size: 1.1rem;
+        margin-bottom: 4%;
+    }
+    .experience__boton--demo, .experience__boton--repo {
+        font-size: 1rem;
+        width: 12vw;
+    }
+    .experience__description span  {
+        padding: 2%;
+        width: 100%;
+    }
+    .experience__description button:hover {
+        font-size: 1.2rem;
+        transition: 0.4s;
+    }
+}
+
+
+
+@media screen and (min-width: 1224px) {
+    .experience__title {
+        font-size: 1.5rem;
+    }
+    .experience__boton--demo, .experience__boton--repo {
+        font-size: 1.2rem;
+        width: 12vw;
+    }
+
+    .experience__description button:hover {
+        font-size: 1.4rem;
+        transition: 0.4s;
+    }
+}

@@ -1,20 +1,19 @@
 .formcontacto {
     background: var(--background-image-form);
+    color: var(--color-letra-blanco);
     display: flex;
     justify-content: center;
     padding: 3% 0%;
-    color: var(--color-letra-blanco);
 }
 
 .formcontacto__contacto {
-    
     width: 80%;
-
-
 }
+
 .formcontacto--esquerda {
     display: none;
 }
+
 .formcontacto__text {
     display: flex;
     flex-direction: column;
@@ -23,8 +22,8 @@
 
 .formcontacto__title {
     font-family: var(--open-sans);
-    font-weight: bold;
     font-size: 1.8rem;
+    font-weight: bold;
     padding-bottom: 5%;
 }
 
@@ -33,43 +32,78 @@
 }
 
 .formcontacto__form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     height: 60vh;
     justify-content: space-evenly;
+    width: 100%;
 }
 
-.formcontacto__input  {
+.formcontacto__input {
     height: 10%;
 }
 
-.formcontacto__textarea, .formcontacto__input  {
-    border-radius: 3%;
+.formcontacto__textarea,
+.formcontacto__input {
+    background: var(--background-blanco);
     border: none;
     font-size: 1.2rem;
-    background: var(--background-blanco);
     outline: none;
+    padding-left: 3%;
 }
-.formcontacto__textarea::placeholder, .formcontacto__input::placeholder {
-    color:#A2A2A2;
-    /* position: absolute;
-    top: 1%;*/
-    padding-left: 2%; 
-    font-size: 1rem;
-    font-weight: 500;
-    display: block;
-}
-.formcontacto__textarea::placeholder::content, .formcontacto__input::placeholder:active span{
-    color: red;
+
+.formcontacto__textarea::placeholder,
+.formcontacto__input::placeholder {
+    color: #A2A2A2;
+    font-family: var(--open-sans);
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .formcontacto__boton {
-    width: 50%;
-    color: var(--background-blanco);
-    height: 7vh;
     background: var(--background-image-menu);
     border: 1px solid var(--background-azul);
-    font-weight: 500;
+    color: var(--background-blanco);
     font-size: 1rem;
+    font-weight: 500;
+    height: 7vh;
+    width: 50%;
+}
+.formcontacto__boton:hover {
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+@media screen and (min-width: 1024px) {
+    .formcontacto--esquerda {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .formcontacto__img {
+        width: 40vw;
+    }
+    .formcontacto--esquerda img  {
+        filter: invert(100%) sepia(34%) saturate(2106%) hue-rotate(177deg) brightness(102%) contrast(101%);
+    }
+    .formcontacto__contacto {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .formcontacto__title {
+        font-size: 2rem;
+    }
+    .formcontacto__subtext {
+        font-size: 1.4rem;
+    }
+    .formcontacto__boton {
+        font-size: 1.3rem;
+    }
+    .formcontacto__boton:hover {
+        font-size: 1.5rem;
+        transition: 0.4s;
+    }
 }
