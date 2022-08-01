@@ -58,7 +58,7 @@
                         <img class="title__profile" src="assets/foto_perfil_cuadrada.jpg">
                         <h2 class="title__bio">Hola, mi nombre es Federico Pitton y diseño paginas web</h2>
                     </div>
-                    <h3 class="title__subsection">Soy estudiante de programacion en la Universidad Nacional Tecnologica
+                    <h3 class="title__subsection">Soy estudiante de programación en la Universidad Nacional Tecnológica
                         y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
@@ -86,7 +86,7 @@
                     trabajos anteriores. </p>
                 <p class="about__paragraph">Mi objetivo principal es desarrollarme profesionalmente y evolucionar en el
                     ambito de la programación, de modo que busco oportunidades que me permitan hacerlo, al tiempo que
-                    seguire capacitandome y adquiriendo nuevos conocimientos</p>
+                    seguire capacitandome y adquiriendo nuevos conocimientos.</p>
             </div>
         </section>
 
@@ -289,12 +289,14 @@
                     <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted
                         lo antes posible. </h3>
-                    <form class="formcontacto__form" name="form">
-                        <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontacto__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                            placeholder="Mensaje"></textarea>
+                    <form class="formcontacto__form" action="https://formsubmit.co/76f2d06b7328bdc8b8eb88f6563c78a2" method="POST" name="form">
+                        <input class="formcontacto__input" type="text" name="Nombre" placeholder="Nombre" required
+                            minlength="3">
+                        <input class="formcontacto__input" type="email" name="Email" placeholder="E-mail" required>
+                        <input class="formcontacto__input" type="text" name="Asunto" placeholder="Assunto" required
+                            minlength="5">
+                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="Mensaje"
+                            required placeholder="Mensaje" minlength="5" maxlength="200"></textarea>
                         <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
                     </form>
                 </div>
