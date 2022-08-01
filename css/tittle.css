@@ -84,6 +84,48 @@
     transition: 0.3s;
 }
 
+@media screen and (min-width: 768px) {
+    .title__div, .title__container  {
+        padding: 0;
+    }
+    .title {
+        position: relative;
+    }
+    .title__div {
+        align-items: flex-start;
+        margin-left: 3%;
+        width: 60%;
+    }
+    .title__profile  {
+        bottom: 0;
+        height: 30vw;
+        margin: auto;
+        margin-right: 3%;
+        padding:0;
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 30vw;
+    }
+    .title__bio  {
+        font-size: 1.6rem;
+    }
+    .title__subsection  {
+        margin: 0;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        padding-top: 1rem;
+        text-align: start;
+    }
+    .title__network  {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .title__network__item  {
+        height: 3vh;
+        width: 40%;
+    }
+}
 @media screen and (min-width: 1024px) {
     .title__div, .title__container  {
         padding: 0;
