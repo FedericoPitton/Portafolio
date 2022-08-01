@@ -73,7 +73,9 @@
     font-size: 1.2rem;
     transition: 0.4s;
 }
-
+.input__label  {
+    position: absolute;
+}
 @media screen and (min-width: 1024px) {
     .formcontacto--esquerda {
         display: flex;
